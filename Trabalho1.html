@@ -1,0 +1,40 @@
+<html>
+<head>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function myFunction(){
+	var nome = document.getElementById("nome").value;
+	alert(nome);
+	var email = document.getElementById("email").value;
+	alert(email);
+	var senha = document.getElementById("senha").value;
+	alert(senha);
+	var sexo = document.getElementById("sexo").value;
+	alert(sexo);
+}
+
+</script>
+  </head>
+<body>
+<div class="container">
+<form>
+Nome:<br>
+<input type="text" class="nome" name="Nome" placeholder="Nome" id="nome"><br>
+Email:<br>
+<input type="email" class="email" name="email" placeholder="Email" id="email"><br>
+ <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seu email com alguém.</small>
+Senha:<br>
+<input type="password" class="senha" name="senha" placeholder="Senha" id="senha"><br>
+Sexo:<br>
+<input type="radio"  name="Sexo" id="sexo">feminino</input><br>
+<input type="radio"  name="Sexo" id=-"sexo">masculino</input><br>
+<input type="checkbox" class="condições" name="condições">Li e aceito<br>
+<button type="button" class="btn btn-success" onclick="myFunction()">Enviar</button><br>
+</form>
+</div>
+</body>
+</html>
